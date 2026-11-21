@@ -2,77 +2,41 @@
 
 ![aml logo](banner.png)
 
-Amellia is a Geometry Dash botting and macro utility built as a Geode mod. It is
-designed to be easy to use for showcases, macro playback, recording, practice
-tools, trajectory helpers, and high-quality rendering where the platform
-supports it.
+# AmelliaBot
 
-Current target: Geometry Dash 2.2081  
-Current Geode SDK: 5.8.2
+AmelliaBot is a Geometry Dash botting and macro utility. It specializes in Botting & Rendering Levels
 
+## Compatibility
 
-## Socials
-
-<p>
-  <img src="telegram.png" width="24" align="left" style="margin-right: 8px;">
-  <b>GDMacros:</b> https://t.me/gdmacros
-</p>
-
-<p>
-  <img src="bwacord.png" width="24" align="left" style="margin-right: 8px;">
-  <b>Discord:</b> https://discord.gg/GsvGnqYvaz
-</p>
-
-<p>
-  <img src="gdmodding.png" width="24" align="left" style="margin-right: 8px;">
-  <b>GDModding:</b> https://t.me/gdm_modding
-</p>
+- Geometry Dash 2.2081
+- Windows and Android
+- Geode 5.10.0 or newer
 
 ## Features
 
-- Record and play back macros with Amellia's macro system.
-- Continue botting from practice checkpoints.
-- TPS Bypass, SpeedHack, Speed Audio Sync, and Frame Stepper tools.
-- Show Trajectory with portal, orb, pad, and frame-perfect support.
-- Autoclicker, Clickbot, Ghost Playback, Path Finder, Layout Mode, and other
-  utility features.
-- Import support for multiple macro formats, including `.gdr`, `.gdr2`, `.cml`,
-  tcBot, and Silicate.
-- Auto Safe Mode to reduce accidental unsafe playback situations.
-- Built-in update channel support for Main and Dev-beta builds.
+- Super-fast rendering. If your PC supports NVENC, you’re in luck
+- Native rendering on Android. Android recording no longer depends on FFmpeg libraries. It uses the phone’s native media encoder, giving a major performance boost and making 4K recording possible even on some weaker devices
+- Real-time Pathfinder is in development. It won’t be available in the initial release. Support for roughly half of the game modes is already implemented, and the feature is planned for a future beta once it’s ready
+- Tiny macro files. AmelliaBot stores inputs compactly: a macro that takes kilobytes in some other bots can take only bytes here
+- I’m not sure what to list that other bots don’t already have, so this list is short, but these features are genuinely different
 
 ## Rendering
 
-Amellia includes a rendering system for creating showcase videos.
+On Windows, rendering uses FFmpeg libraries loaded by the mod. The menu includes controls for installing and managing those libraries.
 
-- Windows: rendering is available with `ffmpeg.exe` configured in the mod
-  settings, or with a compatible FFmpeg API setup.
-- Android: rendering uses `eclipse.ffmpeg-api`.
-- iOS: platform support is restored, but rendering is intentionally disabled.
-  The renderer is stubbed and will show `Rendering is not available on iOS`.
+On Android, rendering uses the device's native media encoder. Available encoding options depend on the device.
 
-Recent builds also include faster PC rendering and preview tools for video
-filters and custom FFmpeg arguments.
-
-## Platforms
-
-| Platform | Status | Notes |
-| --- | --- | --- |
-| Windows | Supported | Full feature set, including rendering |
-| Android | Supported | Requires `eclipse.ffmpeg-api` for rendering |
-| iOS | Supported | Rendering is not available |
+**Android rendering note:** The renderer uses your phone’s native encoder. Rendering at high resolutions can make your phone very hot. If it overheats, the phone may slow down and rendering may take longer
 
 ## Installation
 
-1. Install Geode for your Geometry Dash platform.
-2. Download the latest `cml.amellia.geode` release.
-3. Put the `.geode` file into your Geode `mods` folder.
-4. Launch Geometry Dash and open the Amellia menu in-game.
+1. Install Geode for Geometry Dash 2.2081.
+2. Download `cml.amelliabot.geode` for your platform.
+3. Place the file in Geode's `mods` folder.
+4. Launch Geometry Dash and open the AmelliaBot menu.
 
-## Notes
+## Community
 
-Amellia is intended for showcases, testing, and macro workflows. Use it
-responsibly and follow the rules of the communities where you share your
-content.
-
-This project is not affiliated with RobTop Games or the official Geode team.
+- Telegram: https://t.me/gdmacros
+- Discord: https://discord.gg/GsvGnqYvaz
+- GDModding: https://t.me/gdm_modding
