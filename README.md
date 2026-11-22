@@ -8,9 +8,9 @@ AmelliaBot is a Geometry Dash botting and macro utility. It specializes in Botti
 
 ## Compatibility
 
-- Geometry Dash 2.2081
+- Geometry Dash 2.2091
 - Windows and Android
-- Geode 5.10.0 or newer
+- Geode 6.0.0 or newer
 
 ## Features
 
